@@ -34,7 +34,7 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 
 
 #### Keys
-#CNN #Pytorch #VGG16 #DeepLearning
+`CNN`, `Pytorch`, `VGG16`, `DeepLearning`
 
 #### Amazon Web Services
 
