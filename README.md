@@ -4,12 +4,12 @@
 [image2]: ./images/vgg16_model.png "VGG-16 Model Layers"
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
+#### Keys
+`CNN`, `Pytorch`, `VGG16`, `DeepLearning`
 
 ## Project Overview
 
-In this project, we will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, our algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed. 
-
-Along with exploring state-of-the-art CNN models for classification and localization, we will make important design decisions about the user experience for our app.
+In this project, we will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, our algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed. Along with exploring state-of-the-art CNN models for classification and localization, we will make important design decisions about the user experience for our app.
 
 ## Project Instructions
 
@@ -32,9 +32,6 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 	```
 
 
-
-#### Keys
-`CNN`, `Pytorch`, `VGG16`, `DeepLearning`
 
 #### Amazon Web Services
 
