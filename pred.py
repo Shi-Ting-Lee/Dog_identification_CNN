@@ -75,7 +75,7 @@ def dog_classify():
 		sum_ps = torch.sum(ps)
 		top_p, top_class = ps.topk(5)
 		top_p = top_p / sum_ps
-		probs = top_p.cpu().numpy()[0]
+		probs = top_p.cpu().numpy()[0] * 100
 		idx = top_class.cpu().numpy()[0]
 		classes = [class_names[x] for x in idx]
 
@@ -88,7 +88,7 @@ def dog_classify():
     
 		ax2 = fig.add_subplot(2, 1, 2)
 		ax2.set_title('Probability Chart', fontsize = 25)
-		ax2.set_xlabel('Probability', fontsize = 20)
+		ax2.set_xlabel('Probability(%)', fontsize = 20)
 		#ax2.set_ylabel('Dog Types', fontsize = 20)
 		ax2 = plt.yticks(range(5), classes[::-1], fontsize = 15)
 		ax2 = plt.barh(range(5), probs[::-1]) 
