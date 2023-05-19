@@ -72,7 +72,9 @@ def dog_classify():
 			output = model.forward(img)
 
 		ps = torch.exp(output)
+		sum_ps = torch.sum(ps)
 		top_p, top_class = ps.topk(5)
+		top_p = top_p / sum_ps
 		probs = top_p.cpu().numpy()[0]
 		idx = top_class.cpu().numpy()[0]
 		classes = [class_names[x] for x in idx]
